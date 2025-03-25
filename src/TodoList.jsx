@@ -9,7 +9,7 @@ export default function TodoList(){
     </div>
     <div>
         {todos.map(item => 
-            <TodoItem key={item.id} { ...item}/>
+            <TodoItem key={item.id} { ...item} todos={todos} updateTodos={updateTodos}/>
         )}
     </div>
     </> 
